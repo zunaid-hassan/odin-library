@@ -14,17 +14,18 @@ Live preview: https://zunaid-hassan.github.io/odin-library/
 
 <img src="./images/preview.png" alt="Screenshot of the admin dashboard project"> -->
 
-<!-- ### Credits & Attribution
+### Credits & Attribution
 
 **Images**
 
-- Profile pictures taken from [Circular](https://www.flaticon.com/packs/people-avatar-9) by [BrazOz](https://www.flaticon.com/authors/braoz), Flaticon
+- Book icon taken from [School and Learning pack](https://www.flaticon.com/packs/people-avatar-9) by [Karyative
+  ](https://www.flaticon.com/authors/karyative), Flaticon
 
-**Icons**
+<!-- **Icons**
 
-- [Material Design Icons](https://pictogrammers.com/library/mdi/) from Pictogrammers
+- [Material Design Icons](https://pictogrammers.com/library/mdi/) from Pictogrammers -->
 
-**Fonts**
+<!-- **Fonts**
 
 https://fonts.google.com/specimen/Neuton?preview.layout=grid&lang=en_Latn&categoryFilters=Feeling:%2FExpressive%2FBusiness&preview.lang=en_Latn&preview.script=Latn
 
