@@ -26,13 +26,18 @@ body {
   background-color: beige;
 }
 
+header {
+  background-color: LightSalmon;
+  padding: 5rem;
+}
+
 .title {
   border: 5px solid tomato;
   color: crimson;
   background-color: antiquewhite;
   border-radius: 1rem;
   text-align: center;
-  margin: 5rem auto;
+  margin: 0 auto 5rem;
   padding: 2rem;
   transition-duration: 0.2s;
   width: 30%;
@@ -88,8 +93,33 @@ h1 {
   row-gap: 2rem;
 }
 
+.btn-container {
+  justify-self: center;
+}
+
+.add-new-book-btn {
+  background-color: tomato;
+  border: 5px solid tomato;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-family: "DM Serif Text", serif;
+  transition-duration: 0.1s;
+}
+
+.add-new-book-btn:hover {
+  background-color: rgba(251, 177, 164, 0.813);
+  cursor: pointer;
+}
+
+.add-new-book-btn:active {
+  background-color: MistyRose;
+  cursor: pointer;
+}
+
 .wrapper {
   grid-template-columns: 1fr 6fr 1fr;
+  box-shadow: 0px 3px 5px lightslategrey inset;
 }
 
 .books-container {
@@ -103,11 +133,11 @@ h1 {
   grid-template-rows: repeat(4, auto);
   background-color: white;
 
-  border: 5px solid tomato;
+  border: 4px solid tomato;
   width: fit-content;
   border-radius: 1rem 3rem 3rem 1rem;
   row-gap: 1rem;
-  align-items: center;
+  /* align-items: center; */
   transition-duration: 0.2s;
   transition-timing-function: ease;
 }
@@ -125,4 +155,20 @@ h1 {
 .label {
   font-weight: bold;
   grid-column: 1;
+}
+
+/* /
+/
+/
+/
+/
+/
+/
+/
+/
+/ */
+/* OTHER STYLING */
+::selection {
+  background-color: tomato;
+  color: white;
 }
