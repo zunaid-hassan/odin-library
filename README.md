@@ -8,7 +8,7 @@ Library project from The Odin Project.
 
 Project link: https://www.theodinproject.com/lessons/node-path-javascript-library
 
-Live preview: https://zunaid-hassan.github.io/odin-library/
+Live preview: https://zunaid-hassan.github.io/library-odin/
 
 <!-- ### Preview
 

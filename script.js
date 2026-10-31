@@ -3,32 +3,32 @@ const lt = console.table;
 
 const myLibrary = [];
 
-function Book(title, author, pages, readStatus) {
+function Book(title, author, pages, ReadStatus) {
   this.title = title;
   this.author = author;
   this.pages = pages;
-  this.readStatus = readStatus;
+  this.ReadStatus = ReadStatus;
   this.id = self.crypto.randomUUID();
 }
 
-function addBookToLibrary(title, author, pages, readStatus) {
+function addBookToLibrary(title, author, pages, ReadStatus) {
   const id = self.crypto.randomUUID();
-  const newBook = new Book(title, author, pages, readStatus, id);
+  const newBook = new Book(title, author, pages, ReadStatus, id);
   myLibrary.push(newBook);
 }
 
-addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 310, "read");
+addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 310, "Read");
 addBookToLibrary(
   "Harry Potter and the Sorcerer's Stone",
   "J.K. Rowling",
   309,
-  "unread",
+  "Unread",
 );
-addBookToLibrary("To Kill a Mockingbird", "Harper Lee", 281, "read");
-addBookToLibrary("1984", "George Orwell", 328, "read");
-addBookToLibrary("The Great Gatsby", "F. Scott Fitzgerald", 180, "unread");
-addBookToLibrary("Pride and Prejudice", "Jane Austen", 279, "read");
-addBookToLibrary("Dune", "Frank Herbert", 412, "unread");
+addBookToLibrary("To Kill a Mockingbird", "Harper Lee", 281, "Read");
+addBookToLibrary("1984", "George Orwell", 328, "Read");
+addBookToLibrary("The Great Gatsby", "F. Scott Fitzgerald", 180, "Unread");
+addBookToLibrary("Pride and Prejudice", "Jane Austen", 279, "Read");
+addBookToLibrary("Dune", "Frank Herbert", 412, "Unread");
 
 // lt(myLibrary);
 
@@ -84,12 +84,12 @@ function displayBookPages(book, bookCard) {
 
 function displayReadStatus(book, bookCard) {
   const bookReadStatusLabel = document.createElement("div");
-  bookReadStatusLabel.classList.add("read-status", "label");
-  bookReadStatusLabel.textContent = "Read status:";
+  bookReadStatusLabel.classList.add("Read-status", "label");
+  bookReadStatusLabel.textContent = "Status:";
 
   const bookReadStatus = document.createElement("div");
-  bookReadStatus.classList.add("read-status");
-  bookReadStatus.textContent = book["readStatus"];
+  bookReadStatus.classList.add("Read-status");
+  bookReadStatus.textContent = book["ReadStatus"];
 
   bookCard.appendChild(bookReadStatusLabel);
   bookCard.appendChild(bookReadStatus);
