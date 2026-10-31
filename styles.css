@@ -26,25 +26,27 @@ body {
   background-color: beige;
 }
 
-header {
+header.grid {
   background-color: LightSalmon;
   padding: 2rem;
+  grid-template-columns: 1fr auto 1fr;
 }
 
-.title {
+.title.grid {
   border: 5px solid tomato;
   color: crimson;
   background-color: antiquewhite;
   border-radius: 1rem;
   text-align: center;
-  margin: 0 auto 3rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
   transition-duration: 0.2s;
   width: 30%;
   min-width: fit-content;
-  justify-self: center;
-
+  justify-self: left;
+  align-self: center;
   font-family: "DM Serif Text", serif;
+
+  grid-template-columns: auto auto;
 }
 
 .title:hover {
@@ -71,10 +73,11 @@ header {
 
 h1 {
   cursor: default;
+  display: inline;
 }
 
 #book-icon {
-  display: inline-block;
+  /* display: inline; */
   font-size: 2rem;
   transition-duration: 0.2s;
   transition-timing-function: ease;
@@ -94,7 +97,8 @@ h1 {
 }
 
 .btn-container {
-  justify-self: center;
+  justify-self: right;
+  align-self: center;
 }
 
 .add-new-book-btn {
@@ -201,6 +205,9 @@ h1 {
 
 .add-new-book-text {
   /* font-style: italic; */
+  /* justify-self: center; */
+  text-align: center;
+  font-weight: bold;
 }
 
 .add-new-book label {
